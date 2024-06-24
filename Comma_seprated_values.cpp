@@ -8,12 +8,12 @@ public:
     int age;
     string name, address;
 
-    CSV(const string& name, int age, const string& address) : name(name), age(age), address(address) {}
+    Person(const string& name, int age, const string& address) : name(name), age(age), address(address) {}
 
 };
 
-ostream& operator<<(ostream& os, const CSV& csv) {
-    os << csv.name << "," << csv.age << "," << csv.address << endl;
+ostream& operator<<(ostream& os, const Person& p) {
+    os << p.name << "," << p.age << "," << p.address << endl;
     return os;
 }
 
