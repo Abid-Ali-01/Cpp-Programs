@@ -162,7 +162,7 @@ int main() {
 
     // Test removing a book and a member by ID
     lib.removeBookByID(2);
-    lib.removeMemberByID(102);
+    lib.removeMemberByID(2);
 
     cout << "After removing a book and a member:" << endl;
     lib.listBooks();
