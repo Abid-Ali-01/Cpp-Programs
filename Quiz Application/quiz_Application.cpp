@@ -19,14 +19,6 @@ class Question{
         return TF;
     }
 
-    //Setters
-    void setQuestion(string myques){
-        question = myques;
-    }
-    void setAnsswermyans(char tf){
-        TF = tf;
-    }
-
 };
 
 class QPaper {
@@ -66,15 +58,8 @@ public:
         else{
             cout<<"Nice Try, You Have To Study A Bit More"<<endl;
         }
-
-    }
-
-    
+    }  
 };
-
-
-
-
 
 int main(){
 Question q1("C++ is an extension of the C programming language.", 't');
@@ -104,10 +89,5 @@ QP.AddQuestion(q10);
 cout<<"------------------------------------------------------------"<<endl;
 
 QP.AskQuestions();
-
-
-
-
-
     
 }
