@@ -7,7 +7,6 @@ using namespace std;
 class Question{
     string question;
     char TF;
-    int score = 0;
     public:
     Question(const string& ques, char tf): question(ques), TF(tf){}
 
@@ -58,8 +57,15 @@ public:
         else{
             cout<<"Nice Try, You Have To Study A Bit More"<<endl;
         }
-    }  
+
+    }
+
+    
 };
+
+
+
+
 
 int main(){
 Question q1("C++ is an extension of the C programming language.", 't');
@@ -89,5 +95,10 @@ QP.AddQuestion(q10);
 cout<<"------------------------------------------------------------"<<endl;
 
 QP.AskQuestions();
+
+
+
+
+
     
 }
